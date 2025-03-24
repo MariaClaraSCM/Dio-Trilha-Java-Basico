@@ -1,10 +1,17 @@
 public class Operadores {
     public static void main(String[] args) {
-            String nome1 = "Maria";
-            String nome2 = new String("Maria");
+        boolean condicao1 = true;
+        boolean condicao2 = false;
 
-            //Aqui, o resultado é true
-            System.out.println(nome1.equals(nome2));
+        //não retorna nada, pq as duas opcoes precisariam ser vedadeiras ou falsas. Ter o mesmo resultado desejado. (0 e 1)
+        if (condicao1 && condicao2) {
+            System.out.println("As duas opções são verdadeiras");
+        }
+        //Aparece, pq ou é falso, ou verdadeiro. Só precisa ser uma das opções (0 ou 1)
+        else if(condicao1 || condicao2){
+            System.out.println("Uma das opções é verdadeira");
+        }
 
+        System.out.println("Fim");
     }
 }
